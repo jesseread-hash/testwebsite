@@ -143,13 +143,12 @@ a { color: inherit; }
 
 .hero-glow {
   position: absolute;
-  top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  height: 600px;
-  background: radial-gradient(ellipse at center, rgba(212, 175, 106, 0.16), transparent 60%),
-              radial-gradient(ellipse at 30% 60%, rgba(79, 214, 196, 0.10), transparent 55%);
+  top: -180px;
+  left: -20%;
+  right: -20%;
+  height: 560px;
+  background: radial-gradient(480px 380px at 50% 40%, rgba(212, 175, 106, 0.16), transparent 100%),
+              radial-gradient(420px 340px at 38% 65%, rgba(79, 214, 196, 0.10), transparent 100%);
   pointer-events: none;
 }
 
@@ -455,9 +454,12 @@ a { color: inherit; }
 .rec-card footer {
   color: var(--text-dim);
   font-size: 0.83rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.rec-card footer strong { color: var(--accent); }
+.rec-card footer strong { color: var(--accent); font-size: 0.92rem; }
 
 /* Footer */
 .site-footer {
