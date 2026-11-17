@@ -112,12 +112,17 @@ a { color: inherit; }
 .hero { padding-top: 112px; padding-bottom: 96px; }
 
 .hero-photo {
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin-bottom: 32px;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-photo { filter: brightness(0.9); }
 }
 
 .eyebrow {
